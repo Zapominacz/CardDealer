@@ -1,0 +1,154 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Remove="Cards Images\10_1.png" />
+    <None Remove="Cards Images\10_2.png" />
+    <None Remove="Cards Images\10_3.png" />
+    <None Remove="Cards Images\10_4.png" />
+    <None Remove="Cards Images\11_1.png" />
+    <None Remove="Cards Images\11_12.png" />
+    <None Remove="Cards Images\11_2.png" />
+    <None Remove="Cards Images\11_22.png" />
+    <None Remove="Cards Images\11_3.png" />
+    <None Remove="Cards Images\11_32.png" />
+    <None Remove="Cards Images\11_4.png" />
+    <None Remove="Cards Images\11_42.png" />
+    <None Remove="Cards Images\12_1.png" />
+    <None Remove="Cards Images\12_12.png" />
+    <None Remove="Cards Images\12_2.png" />
+    <None Remove="Cards Images\12_22.png" />
+    <None Remove="Cards Images\12_3.png" />
+    <None Remove="Cards Images\12_32.png" />
+    <None Remove="Cards Images\12_4.png" />
+    <None Remove="Cards Images\12_42.png" />
+    <None Remove="Cards Images\13_1.png" />
+    <None Remove="Cards Images\13_12.png" />
+    <None Remove="Cards Images\13_2.png" />
+    <None Remove="Cards Images\13_22.png" />
+    <None Remove="Cards Images\13_3.png" />
+    <None Remove="Cards Images\13_32.png" />
+    <None Remove="Cards Images\13_4.png" />
+    <None Remove="Cards Images\13_42.png" />
+    <None Remove="Cards Images\14_1.png" />
+    <None Remove="Cards Images\14_12.png" />
+    <None Remove="Cards Images\14_2.png" />
+    <None Remove="Cards Images\14_3.png" />
+    <None Remove="Cards Images\14_4.png" />
+    <None Remove="Cards Images\2_1.png" />
+    <None Remove="Cards Images\2_2.png" />
+    <None Remove="Cards Images\2_3.png" />
+    <None Remove="Cards Images\2_4.png" />
+    <None Remove="Cards Images\3_1.png" />
+    <None Remove="Cards Images\3_2.png" />
+    <None Remove="Cards Images\3_3.png" />
+    <None Remove="Cards Images\3_4.png" />
+    <None Remove="Cards Images\4_1.png" />
+    <None Remove="Cards Images\4_2.png" />
+    <None Remove="Cards Images\4_3.png" />
+    <None Remove="Cards Images\4_4.png" />
+    <None Remove="Cards Images\5_1.png" />
+    <None Remove="Cards Images\5_2.png" />
+    <None Remove="Cards Images\5_3.png" />
+    <None Remove="Cards Images\5_4.png" />
+    <None Remove="Cards Images\6_1.png" />
+    <None Remove="Cards Images\6_2.png" />
+    <None Remove="Cards Images\6_3.png" />
+    <None Remove="Cards Images\6_4.png" />
+    <None Remove="Cards Images\7_1.png" />
+    <None Remove="Cards Images\7_2.png" />
+    <None Remove="Cards Images\7_3.png" />
+    <None Remove="Cards Images\7_4.png" />
+    <None Remove="Cards Images\8_1.png" />
+    <None Remove="Cards Images\8_2.png" />
+    <None Remove="Cards Images\8_3.png" />
+    <None Remove="Cards Images\8_4.png" />
+    <None Remove="Cards Images\9_1.png" />
+    <None Remove="Cards Images\9_2.png" />
+    <None Remove="Cards Images\9_3.png" />
+    <None Remove="Cards Images\9_4.png" />
+    <None Remove="Cards Images\black_joker.png" />
+    <None Remove="Cards Images\red_joker.png" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <EmbeddedResource Include="Cards Images\10_1.png" />
+    <EmbeddedResource Include="Cards Images\10_2.png" />
+    <EmbeddedResource Include="Cards Images\10_3.png" />
+    <EmbeddedResource Include="Cards Images\10_4.png" />
+    <EmbeddedResource Include="Cards Images\11_1.png" />
+    <EmbeddedResource Include="Cards Images\11_12.png" />
+    <EmbeddedResource Include="Cards Images\11_2.png" />
+    <EmbeddedResource Include="Cards Images\11_22.png" />
+    <EmbeddedResource Include="Cards Images\11_3.png" />
+    <EmbeddedResource Include="Cards Images\11_32.png" />
+    <EmbeddedResource Include="Cards Images\11_4.png" />
+    <EmbeddedResource Include="Cards Images\11_42.png" />
+    <EmbeddedResource Include="Cards Images\12_1.png" />
+    <EmbeddedResource Include="Cards Images\12_12.png" />
+    <EmbeddedResource Include="Cards Images\12_2.png" />
+    <EmbeddedResource Include="Cards Images\12_22.png" />
+    <EmbeddedResource Include="Cards Images\12_3.png" />
+    <EmbeddedResource Include="Cards Images\12_32.png" />
+    <EmbeddedResource Include="Cards Images\12_4.png" />
+    <EmbeddedResource Include="Cards Images\12_42.png" />
+    <EmbeddedResource Include="Cards Images\13_1.png" />
+    <EmbeddedResource Include="Cards Images\13_12.png" />
+    <EmbeddedResource Include="Cards Images\13_2.png" />
+    <EmbeddedResource Include="Cards Images\13_22.png" />
+    <EmbeddedResource Include="Cards Images\13_3.png" />
+    <EmbeddedResource Include="Cards Images\13_32.png" />
+    <EmbeddedResource Include="Cards Images\13_4.png" />
+    <EmbeddedResource Include="Cards Images\13_42.png" />
+    <EmbeddedResource Include="Cards Images\14_1.png" />
+    <EmbeddedResource Include="Cards Images\14_12.png" />
+    <EmbeddedResource Include="Cards Images\14_2.png" />
+    <EmbeddedResource Include="Cards Images\14_3.png" />
+    <EmbeddedResource Include="Cards Images\14_4.png" />
+    <EmbeddedResource Include="Cards Images\2_1.png" />
+    <EmbeddedResource Include="Cards Images\2_2.png" />
+    <EmbeddedResource Include="Cards Images\2_3.png" />
+    <EmbeddedResource Include="Cards Images\2_4.png" />
+    <EmbeddedResource Include="Cards Images\3_1.png" />
+    <EmbeddedResource Include="Cards Images\3_2.png" />
+    <EmbeddedResource Include="Cards Images\3_3.png" />
+    <EmbeddedResource Include="Cards Images\3_4.png" />
+    <EmbeddedResource Include="Cards Images\4_1.png" />
+    <EmbeddedResource Include="Cards Images\4_2.png" />
+    <EmbeddedResource Include="Cards Images\4_3.png" />
+    <EmbeddedResource Include="Cards Images\4_4.png" />
+    <EmbeddedResource Include="Cards Images\5_1.png" />
+    <EmbeddedResource Include="Cards Images\5_2.png" />
+    <EmbeddedResource Include="Cards Images\5_3.png" />
+    <EmbeddedResource Include="Cards Images\5_4.png" />
+    <EmbeddedResource Include="Cards Images\6_1.png" />
+    <EmbeddedResource Include="Cards Images\6_2.png" />
+    <EmbeddedResource Include="Cards Images\6_3.png" />
+    <EmbeddedResource Include="Cards Images\6_4.png" />
+    <EmbeddedResource Include="Cards Images\7_1.png" />
+    <EmbeddedResource Include="Cards Images\7_2.png" />
+    <EmbeddedResource Include="Cards Images\7_3.png" />
+    <EmbeddedResource Include="Cards Images\7_4.png" />
+    <EmbeddedResource Include="Cards Images\8_1.png" />
+    <EmbeddedResource Include="Cards Images\8_2.png" />
+    <EmbeddedResource Include="Cards Images\8_3.png" />
+    <EmbeddedResource Include="Cards Images\8_4.png" />
+    <EmbeddedResource Include="Cards Images\9_1.png" />
+    <EmbeddedResource Include="Cards Images\9_2.png" />
+    <EmbeddedResource Include="Cards Images\9_3.png" />
+    <EmbeddedResource Include="Cards Images\9_4.png" />
+    <EmbeddedResource Include="Cards Images\black_joker.png" />
+    <EmbeddedResource Include="Cards Images\red_joker.png" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

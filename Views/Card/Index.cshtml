@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Your card(s)";
+}
+
+<h1>Your card(s):</h1>
+
+<div>
+    @{
+        foreach (var card in ViewBag.Cards)
+        {
+            <img src="@ImageToPNGStringConverter.GetPNGString(card.Image)" width="250" height="363" />
+        }
+    }
+</div>
