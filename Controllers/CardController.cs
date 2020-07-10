@@ -32,8 +32,7 @@ namespace CardDealer.Controllers
             if (sorted)
                 cards.Sort();
 
-            ViewBag.Cards = cards;
-            return View();
+            return View(cards);
         }
     }
 }

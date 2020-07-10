@@ -1,15 +1,24 @@
-﻿
+﻿@model  List<Card>
+
 @{
-    ViewData["Title"] = "Your card(s)";
+    ViewData["Title"] = "Card Dealer: Your card(s)";
 }
 
 <h1>Your card(s):</h1>
 
 <div>
     @{
-        foreach (var card in ViewBag.Cards)
+        foreach (var card in Model)
         {
             <img src="@ImageToPNGStringConverter.GetPNGString(card.Image)" width="250" height="363" />
-        }
+        }    
     }
 </div>
+
+
+
+    
+
+
+
+
