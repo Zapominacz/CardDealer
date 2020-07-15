@@ -13,8 +13,6 @@ namespace CardDealer
         private readonly String blackJokerName = "black_joker.png";
         private readonly String redJokerName = "red_joker.png";
 
-        //private Dictionary<string, string> imageStrings;
-
         public override Deck MakeDeck()
         {
             List<Card> cards = new List<Card>();
@@ -30,22 +28,6 @@ namespace CardDealer
 
             return new Deck(cards);
         }
-
-        /*private void initialiseImageStrings()
-        {
-            for (int i = 2; i <= 14; i++)
-            {
-                for (int j = 1; j <= 4; j++)
-                {
-                    String resourceName = cardResourceName(cardPath, i, j);
-                    Image image = EmbeddedResourceGetter.GetImage(resourceName);
-                    String imageString = ImageToPNGStringConverter.GetPNGString(image);
-                    imageStrings.Add(resourceName, imageString);
-                }
-            }
-
-
-        }*/
 
         private String cardResourceName(string prefix, string cardString)
         {
