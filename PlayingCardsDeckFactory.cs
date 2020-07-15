@@ -20,11 +20,11 @@ namespace CardDealer
             {
                 for (int j = 1; j <= 4; j++)
                 {
-                    cards.Add(new Card((Card.Suits)j, i, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, i, j))));
+                    cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)j, i, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, i, j))));
                 }
             }
-            cards.Add(new Card((Card.Suits)0, 15, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, blackJokerName))));
-            cards.Add(new Card((Card.Suits)0, 15, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, redJokerName))));
+            cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)0, 15, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, blackJokerName))));
+            cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)0, 15, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, redJokerName))));
 
             return new Deck(cards);
         }
