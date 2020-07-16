@@ -18,20 +18,7 @@ namespace CardDealer.Controllers
         {
             amount = Math.Clamp(amount, minimumCards, maximumCards);
 
-            List<Card> cards = new List<Card>();
-            PlayingCardsDeckFactory pcdf = new PlayingCardsDeckFactory();
-            Deck deck = pcdf.MakeDeck();
-          
-            for (int i = 0; i < amount; i++)
-            {
-                if (deck.Cards.Count == 0)
-                    deck = pcdf.MakeDeck();
-                cards.Add(deck.GetRandomCard(repeats));
-            }
-
-            if (sorted)
-                cards.Sort();
-
+            List<Card> cards = CardList.DrawCards(new PlayingCardsDeckFactory(), amount, sorted, repeats);
             return View(cards);
         }
     }

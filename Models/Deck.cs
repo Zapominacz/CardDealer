@@ -13,11 +13,20 @@ namespace CardDealer.Models
     {
         public List<Card> Cards { get; private set; }
 
+        public Deck()
+        {
+            Cards = new List<Card>();
+        }
+        
         public Deck(List<Card> cards)
         {
             Cards = cards; 
         }
 
+        public bool IsEmpty()
+        {
+            return Cards.Count == 0;
+        }
         public Card GetRandomCard(bool keepInDeck)
         {
             if (Cards.Count == 0)
