@@ -1,4 +1,6 @@
-﻿@model  List<Card>
+﻿@using ExtensionMethods;
+@model List<Card>
+
 
 @{
     ViewData["Title"] = "Card Dealer: Your card(s)";
@@ -10,14 +12,14 @@
     @{
         foreach (var card in Model)
         {
-            <img src="@ImageToStringConverter.GetPNGString(card.Image)" width="250" height="363" />
-        }    
+            <img src="@card.Image.GetPNGString()" width="250" height="363" />
+        }
     }
 </div>
 
 
 
-    
+
 
 
 

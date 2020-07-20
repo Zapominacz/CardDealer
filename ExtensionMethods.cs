@@ -5,16 +5,16 @@ using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CardDealer
+namespace ExtensionMethods
 {
-    public static class ImageToStringConverter
+    public static class ExtensionMethods
     {
-        public static String GetPNGString(Image image)
+        public static String GetPNGString(this Image image)
         {
-            return GetImageString(image, "data:image/png;base64,{0}");
+            return image.GetImageString("data:image/png;base64,{0}");
         }
 
-        public static String GetImageString(Image image, String format)
+        public static String GetImageString(this Image image, String format)
         {
             if (image is null)
                 return null;
