@@ -10,7 +10,7 @@
 
 <div>
     @{
-        foreach (var card in Model)
+        foreach (Card card in Model)
         {
             <img src="@card.Image.GetPNGString()" width="250" height="363" />
         }
