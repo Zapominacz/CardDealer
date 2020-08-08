@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CardDealer.Models
 {
@@ -37,11 +33,11 @@ namespace CardDealer.Models
             }
         }
 
-        public FrenchPlayingCard(Suits suit, int rank, Image image)
+        public FrenchPlayingCard(Suits suit, int rank, string imageUrl)
         {
             this.Suit = suit;
             this.Rank = rank;
-            this.Image = image;
+            this.CardUrl = imageUrl;
         }
 
         public override int CompareTo(object obj)

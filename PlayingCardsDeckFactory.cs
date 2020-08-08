@@ -9,7 +9,7 @@ namespace CardDealer
 {
     public class PlayingCardsDeckFactory : DeckFactory
     {
-        private readonly String cardPath = "CardDealer.Cards_Images.";
+        private readonly String cardPath = "/CardsImages/";
         private readonly String blackJokerName = "black_joker.png";
         private readonly String redJokerName = "red_joker.png";
 
@@ -20,11 +20,11 @@ namespace CardDealer
             {
                 for (int j = 1; j <= 4; j++)
                 {
-                    cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)j, i, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, i, j))));
+                    cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)j, i, cardResourceName(cardPath, i, j)));
                 }
             }
-            cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)0, 15, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, blackJokerName))));
-            cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)0, 15, EmbeddedResourceGetter.GetImage(cardResourceName(cardPath, redJokerName))));
+            cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)0, 15, cardResourceName(cardPath, blackJokerName)));
+            cards.Add(new FrenchPlayingCard((FrenchPlayingCard.Suits)0, 15, cardResourceName(cardPath, redJokerName)));
 
             return new Deck(cards);
         }

@@ -9,12 +9,12 @@
 <h1>Your card(s):</h1>
 
 <div>
-    @{
-        foreach (Card card in Model)
-        {
-            <img src="@card.Image.GetPNGString()" width="250" height="363" />
-        }
-    }
+ @{ 
+     foreach(Card card in Model)
+     {
+         <img src="@card.CardUrl"/>
+     }
+ }
 </div>
 
 
